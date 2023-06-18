@@ -65,6 +65,9 @@ beautify()
 
   ul > li
     list-style-type: circle
+  
+  hr
+    @extend .custom-hr
 
 #article-container
   word-wrap: break-word
@@ -144,15 +147,18 @@ beautify()
     p
       margin: 0 0 8px
 
+  > :last-child
+    margin-bottom: 0 !important
+
+  hr
+    margin: 20px 0
+
   if hexo-config('beautify.enable')
     if hexo-config('beautify.field') == 'site'
       beautify()
     else if hexo-config('beautify.field') == 'post'
       &.post-content
         beautify()
-
-  > :last-child
-    margin-bottom: 0 !important
 
 #post
   .tag_share
