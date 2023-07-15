@@ -13,6 +13,8 @@
                 <a class="tag is-light article-tag" href="<%= url_for(category.path) %>"><%= category.name %>&nbsp;(<%= category.posts.length %>)</a>
             </span>
             <% }) %>
+
+            <%- aside_categories({ limit: theme.aside.card_categories.limit === 0 ? 0 : theme.aside.card_categories.limit || 8 , expand: theme.aside.card_categories.expand }) %>
         </div>
     </div>
 </section>

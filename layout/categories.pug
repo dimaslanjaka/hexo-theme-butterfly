@@ -1,0 +1,16 @@
+extends includes/layout.pug
+
+block content
+  - var categories = site.categories.sort("name", 1).toArray()
+  #page
+    div.card-categories#aside-content.card-widget
+      div.item-headline
+        i.fas.fa-folder-open
+        span=_p('aside.card_categories')
+        span=categories.length
+      ul.card-category-list#aside-cat-list
+        each cat, index in categories
+          li.card-category-list-item
+            a.card-category-list-link(href="#{url_for(cat.path)}")
+              span.card-category-list-name(style="margin-right:3em")=cat.name
+              span.card-category-list-count=cat.length
