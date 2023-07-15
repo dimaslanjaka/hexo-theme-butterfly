@@ -1,0 +1,123 @@
+footer:
+  framework: Framework
+  theme: Theme
+
+copy:
+  success: Copy successfully
+  error: Copy error
+  noSupport: Browser tidak mendukung
+
+page:
+  articles: Artikel
+  tag: Tag
+  category: Kategori
+  archives: Archives
+
+card_post_count: Komentar
+
+sticky: Sticky
+no_title: Tanpa judul
+
+post:
+  created: Dibuat
+  updated: Diupdate
+  wordcount: Total kata
+  min2read: Waktu membaca
+  min2read_unit: min
+  page_pv: Kunjungan Postingan
+  comments: Comments
+  copyright:
+    author: Author
+    link: Link
+    copyright_notice: Copyright Notice
+    copyright_content: 'All articles in this blog are licensed under <a href="%s">%s</a> unless stating additionally.'
+  recommend: Related Articles
+  edit: Edited on
+
+search:
+  title: Search
+  load_data: Memuat Database
+  algolia_search:
+    input_placeholder: Cari postingan
+    hits_empty: "Kami tidak dapat menemukan hasil apapun untuk pencarian: ${query}."
+    hits_stats: '${hits} hasil ditemukan in ${time} ms'
+
+  local_search:
+    input_placeholder: Cari postingan
+    hits_empty: "Kami tidak dapat menemukan hasil apapun untuk pencarian: ${query}"
+    hits_stats: '${hits} results found'
+
+pagination:
+  prev: Postingan Sebelumnya
+  next: Postingan Selanjutnya
+
+comment: Komentar
+
+aside:
+  articles: Postingan
+  tags: Tags
+  categories: Kategori
+  card_announcement: Pengumuman
+  card_categories: Kategori
+  card_tags: Tags
+  card_archives: Archives
+  card_recent_post: Postingan Baru
+  card_webinfo:
+    headline: Info
+    article_name: Postingan
+    runtime:
+      name: Run time
+      unit: hari
+    last_push_date:
+      name: Terakhir diperbarui
+    site_wordcount: Total Hitungan
+    site_uv_name: UV
+    site_pv_name: PV
+  more_button: Selengkapnya
+  card_newest_comments:
+    headline: Komentar Terbaru
+    loading_text: memuat...
+    error: Unable to get the data, please make sure the settings are correct.
+    zero: Tidak ada komentar
+    image: image
+    link: link
+    code: code
+  card_toc: Katalog
+
+date_suffix:
+  just: baru saja
+  min: menit yang lalu
+  hour: jam yang lalu
+  day: hari yang lalu
+  month: bulan yang lalu
+
+donate: Donasi
+share: Bagikan
+
+rightside:
+  readmode_title: Baca Selengkapnya
+  translate_title: Switch Between Traditional Chinese And Simplified Chinese
+  night_mode_title: Switch Between Light And Dark Mode
+  back_to_top: Kembali ke atas
+  toc: Table Of Contents
+  scroll_to_comment: Geser untuk memberikan komentar
+  setting: Setting
+  aside: Toggle between single-column and double-column
+  chat: Chat
+
+copy_copyright:
+  author: Author
+  link: Link
+  source: Source
+  info: Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+
+Snackbar:
+  chs_to_cht: Traditional Chinese Activated Manually
+  cht_to_chs: Simplified Chinese Activated Manually
+  day_to_night: Dark Mode Activated Manually
+  night_to_day: Light Mode Activated Manually
+
+loading: Memuat...
+load_more: Muat lainnya
+
+error404: Halaman tidak ditemukan
