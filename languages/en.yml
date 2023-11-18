@@ -30,6 +30,8 @@ post:
     link: Link
     copyright_notice: Copyright Notice
     copyright_content: 'All articles in this blog are licensed under <a href="%s">%s</a> unless stating additionally.'
+    created: Created
+    updated: Updated
   recommend: Related Articles
   edit: Edited on
 
