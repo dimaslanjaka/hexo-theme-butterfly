@@ -4,7 +4,7 @@
 - var pageType = is_post() ? 'post' : 'page'
 
 doctype html
-html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside)
+html(lang=getLanguage(config.language) data-theme=theme.display_mode class=htmlClassHideAside)
   head
     include ./head.pug
   body
@@ -13,7 +13,7 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
 
     if theme.background
       #web_bg
-      
+
     !=partial('includes/sidebar', {}, {cache: true})
 
     if page.type !== '404'

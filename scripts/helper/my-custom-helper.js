@@ -15,6 +15,25 @@ hexo.extend.helper.register('getAuthor', function (author, fallback) {
   return hexo.config.author;
 });
 
+hexo.extend.helper.register('getLanguage', function (page) {
+  let lang;
+  if ('lang' in page) {
+    lang = page.lang;
+  } else if ('language' in page) {
+    lang = page.language;
+  } else if ('lang' in hexo.config) {
+    lang = hexo.config.lang;
+  } else if ('language' in hexo.config) {
+    lang = hexo.config.language;
+  }
+  if (typeof lang == 'string') {
+    return lang;
+  } else if (Array.isArray(lang)) {
+    return lang[0];
+  }
+  return 'en';
+});
+
 hexo.extend.helper.register(
   'getPostByLabel',
   /**
@@ -31,7 +50,9 @@ hexo.extend.helper.register(
     const data = hexo.site[by].data;
     const map = filternames
       .map((filtername) => {
-        const filter = data.filter(({ name }) => String(name).toLowerCase() == filtername.toLowerCase());
+        const filter = data.filter(
+          ({ name }) => String(name).toLowerCase() == filtername.toLowerCase()
+        );
         return filter.map((group) => {
           return group.posts.map(
             /**
@@ -73,7 +94,10 @@ hexo.extend.helper.register('json_stringify', function (value, spaces) {
   if (value instanceof nunjucks.runtime.SafeString) {
     value = value.toString();
   }
-  const jsonString = JSON.stringify(value, null, spaces).replace(/</g, '\\u003c');
+  const jsonString = JSON.stringify(value, null, spaces).replace(
+    /</g,
+    '\\u003c'
+  );
   return nunjucks.runtime.markSafe(jsonString);
 });
 
