@@ -23,8 +23,9 @@
     "email": "my@crazywong.com"
   },
   "dependencies": {
-    "hexo-renderer-stylus": "^3.0.1",
-    "hexo-renderer-pug": "^3.0.0"
+    "cheerio": "^1.0.0",
+    "hexo-renderers": "^3.0.0",
+    "sbg-utility": "^1.1.8"
   },
   "homepage": "https://butterfly.js.org/",
   "author": "Jerry <my@crazywong.com>",
