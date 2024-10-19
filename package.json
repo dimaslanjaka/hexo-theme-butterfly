@@ -25,7 +25,7 @@
   "dependencies": {
     "cheerio": "^1.0.0",
     "hexo-renderers": "^3.0.0",
-    "sbg-utility": "^2.0.1"
+    "sbg-utility": "^2.0.3"
   },
   "homepage": "https://butterfly.js.org/",
   "author": "Jerry <my@crazywong.com>",
